@@ -1,5 +1,20 @@
 const multiplicationTable = function(maxValue) {
-  // Your code here
+
+let rangeArray = [];
+let resultArray = [];
+
+for (let i = 0; i < maxValue; i++) {
+  resultArray += rangeArray[i]
+}
+
+
+
+
+
+
+
+
+return resultArray;
 };
 
 console.log(multiplicationTable(1));
