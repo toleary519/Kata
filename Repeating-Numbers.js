@@ -1,14 +1,18 @@
-const repeatNumbers = function(data) {
-  // Put your solution here
 
-let numString = [];
+function repeatNumbers(data) {
 
-for (let i = 0; i < data.length; i++) {
-  numString.push(data[i][i]);
-} 
+let repeatString = "";
 
-return numString;
-};
+for (let i = 0; i < data.length; i++){
+    for (let j = data[i][1]; j > 0; j--){
+      repeatString += data[i][0];
+    }
+    if(i < (data.length - 1)){
+      repeatString += ", ";
+    }
+  }
+  return repeatString;
+}
 
 console.log(repeatNumbers([[1, 10]]));
 console.log(repeatNumbers([[1, 2], [2, 3]]));
