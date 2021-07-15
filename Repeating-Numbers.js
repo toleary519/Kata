@@ -1,17 +1,17 @@
 
-function repeatNumbers(data) {
+const repeatNumbers = function (data) {
 
-let repeatString = "";
+let numString = "";
 
 for (let i = 0; i < data.length; i++){
     for (let j = data[i][1]; j > 0; j--){
-      repeatString += data[i][0];
+      numString += data[i][0];
     }
     if(i < (data.length - 1)){
-      repeatString += ", ";
+      numString += ", ";
     }
   }
-  return repeatString;
+  return numString;
 }
 
 console.log(repeatNumbers([[1, 10]]));
