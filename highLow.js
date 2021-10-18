@@ -13,7 +13,7 @@
 
 const highAndLow = (numbers) => {
   let ints = numbers.split(" ").map(Number);
-  console.log("ints:", ints);
+
   let high = ints[0];
   let low = ints[0];
 
