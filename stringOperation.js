@@ -26,17 +26,22 @@
 //   }
 // }
 
+// function arithmetic(a, b, operator) {
+//   switch (operator) {
+//     case "add":
+//       return a + b;
+//     case "subtract":
+//       return a - b;
+//     case "multiply":
+//       return a * b;
+//     case "divide":
+//       return a / b;
+//   }
+// }
+
 function arithmetic(a, b, operator) {
-  switch (operator) {
-    case "add":
-      return a + b;
-    case "subtract":
-      return a - b;
-    case "multiply":
-      return a * b;
-    case "divide":
-      return a / b;
-  }
+  opter = { add: "+", subtract: "-", multiply: "*", divide: "/" };
+  return eval(a + opter[operator] + b);
 }
 
 console.log(arithmetic(5, 2, "add")); // => 7
