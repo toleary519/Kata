@@ -11,18 +11,31 @@
 // 5, 2, "multiply" --> 10
 // 5, 2, "divide"   --> 2.5
 
+// function arithmetic(a, b, operator) {
+//   if (operator === "add") {
+//     return a + b;
+//   }
+//   if (operator === "subtract") {
+//     return a - b;
+//   }
+//   if (operator === "divide") {
+//     return a / b;
+//   }
+//   if (operator === "multiply") {
+//     return a * b;
+//   }
+// }
+
 function arithmetic(a, b, operator) {
-  if (operator === "add") {
-    return a + b;
-  }
-  if (operator === "subtract") {
-    return a - b;
-  }
-  if (operator === "divide") {
-    return a / b;
-  }
-  if (operator === "multiply") {
-    return a * b;
+  switch (operator) {
+    case "add":
+      return a + b;
+    case "subtract":
+      return a - b;
+    case "multiply":
+      return a * b;
+    case "divide":
+      return a / b;
   }
 }
 
