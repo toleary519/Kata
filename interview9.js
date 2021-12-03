@@ -25,11 +25,13 @@ const returnPlayers = (outcomes) => {
   return players;
 };
 
-console.log(returnPlayers(outcomes));
+// console.log(returnPlayers(outcomes));
 
 // Using the same data as the previous question, write a function that produces
 // a data structure like the following, which lists each participant, and a list
 // of who they've beaten.
+
+// ["Alice", "Bob", "Carol", "Dean", "Elise"];
 
 // {
 //   'Alice': ['Bob', 'Carol'],
@@ -38,3 +40,25 @@ console.log(returnPlayers(outcomes));
 //   'Dean':  ['Elise'],
 //   'Elise': ['Bob', 'Carol'],
 // }
+
+const players = returnPlayers(outcomes);
+
+const breakdownObj = (players, outcomes) => {
+  let breakdown = {};
+
+  for (const player of players) {
+    breakdown[player] = [];
+  }
+
+  for (const game of outcomes) {
+    for (const key of Object.keys(breakdown)) {
+      if (game.winner === key && !breakdown[key].includes(game.loser)) {
+        breakdown[key].push(game.loser);
+      }
+    }
+  }
+
+  return breakdown;
+};
+
+console.log(breakdownObj(players, outcomes));
