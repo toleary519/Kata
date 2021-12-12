@@ -12,7 +12,7 @@ function cleanString(s) {
   let sArr = s.split("");
 
   if (sArr.length === []) {
-    return "' '";
+    return s;
   }
 
   for (let i = 0; i < sArr.length; i++) {
