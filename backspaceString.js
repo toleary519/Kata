@@ -29,6 +29,18 @@ function cleanString(s) {
   return sArr.join("");
 }
 
+// function clean_string(s) {
+//   const result = []
+//   for (const c of s) {
+//     if (c === "#") {
+//       result.pop()
+//     } else {
+//       result.push(c)
+//     }
+//   }
+//   return result.join("")
+// }
+
 console.log(cleanString("abc#d##c")); // 'ac'
 console.log("***********************************************");
 console.log(cleanString("abc####d##c#")); // ''
