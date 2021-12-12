@@ -26,3 +26,36 @@
 
 // Note for C
 // The two arrays have the same size (> 0) given as parameter in function comp.
+
+function comp(array1, array2) {
+  let squares = [];
+
+  if (!array1 || !array2) {
+    return false;
+  }
+
+  for (const num of array1) {
+    squares.push(Math.pow(num, 2));
+  }
+
+  for (const num2 of array2) {
+    if (!squares.includes(num2)) {
+      return false;
+    }
+    return true;
+  }
+}
+
+a1 = [121, 144, 19, 161, 19, 144, 19, 11];
+a2 = [
+  11 * 11,
+  121 * 121,
+  144 * 144,
+  19 * 19,
+  161 * 161,
+  19 * 19,
+  144 * 144,
+  19 * 19,
+];
+
+console.log(comp(a1, a2));
