@@ -20,14 +20,14 @@ function meeting(s) {
   let flippedNames = [];
 
   for (const name of names) {
-    flippedNames.push(name.replace(/\:/g, ",").split(",").reverse().join(","));
+    flippedNames.push(name.replace(/\:/g, ",").split(",").reverse().join(", "));
   }
-  console.log(
-    flippedNames
-      .sort()
-      .map((x) => `(${x})`)
-      .join("")
-  );
+  // console.log(
+  //   flippedNames
+  //     .sort()
+  //     .map((x) => `(${x})`)
+  //     .join("")
+  // );
   let output = flippedNames
     .sort()
     .map((x) => `(${x})`)
