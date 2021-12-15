@@ -1,44 +1,38 @@
-// Pete likes to bake some cakes. He has some recipes and ingredients. Unfortunately he is not good in maths. Can you help him to find out, how many cakes he could bake considering his recipes?
+// Your job is to write a function which increments a string, to create a new string.
 
-// Write a function cakes(), which takes the recipe (object) and the available ingredients (also an object) and returns the maximum number of cakes Pete can bake (integer). For simplicity there are no units for the amounts (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients that are not present in the objects, can be considered as 0.
-
+// If the string already ends with a number, the number should be incremented by 1.
+// If the string does not end with a number. the number 1 should be appended to the new string.
 // Examples:
 
-function cakes(recipe, available) {
-  let cakes = 0;
+// foo -> foo1
 
-  let ingredients = Object.keys(recipe);
-  let pantry = Object.keys(available);
+// foobar23 -> foobar24
 
-  for (const ingredient of ingredients) {
-    if (!pantry.includes(ingredient)) {
-      return 0;
-    }
-  }
+// foo0042 -> foo0043
 
-  for (const ingredient in recipe) {
-    if (recipe[ingredient] <= available[ingredient]) {
-      available[ingredient] -= recipe[ingredient];
+// foo9 -> foo10
+
+// foo099 -> foo100
+
+// Attention: If the number has leading zeros the amount of digits should be considered.
+
+function incrementString(str) {
+  const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+  let outputString = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (nums.includes(str[i])) {
+      outputString.push(str.slice(i));
+      console.log(outputString);
+      return outputString.join("");
     } else {
-      return cakes;
+      outputString.push(str[i]);
     }
-    cakes++;
   }
-
-  return cakes;
+  outputString.push("1");
+  return outputString.join("");
 }
 
-// must return 2
-console.log(
-  cakes(
-    { flour: 500, sugar: 200, eggs: 1 },
-    { flour: 1200, sugar: 1200, eggs: 5, milk: 200 }
-  )
-);
-// must return 0
-console.log(
-  cakes(
-    { apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100 },
-    { sugar: 500, flour: 2000, milk: 2000 }
-  )
-);
+console.log(incrementString("foobar000"));
+console.log(incrementString("foobar022"));
+console.log(incrementString("foobar157"));
