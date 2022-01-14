@@ -30,9 +30,6 @@
 // Orcs, Men, Wargs, Goblins, Uruk Hai, Trolls, Wizards.
 // All values are non-negative integers. The resulting sum of the worth for each side will not exceed the limit of a 32-bit integer.
 
-// Output:
-// Return "Battle Result: Good triumphs over Evil" if good wins, "Battle Result: Evil eradicates all trace of Good" if evil wins, or "Battle Result: No victor on this battle field" if it ends in a tie.
-
 function goodVsEvil(good, evil) {
   let goodArray = good.split(" ");
   let goodWorth = 0;
