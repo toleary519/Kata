@@ -19,7 +19,6 @@
 
 // Thus, given the count of each of the races on the side of good, followed by the count of each of the races on the side of evil, determine which side wins.
 
-// Input:
 // The function will be given two parameters. Each parameter will be a string of multiple integers separated by a single space. Each string will contain the count of each race on the side of good and evil.
 
 // The first parameter will contain the count of each race on the side of good in the following order:
