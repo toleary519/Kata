@@ -4,7 +4,6 @@
 
 // Examples
 // "abc#d##c"      ==>  "ac"
-// "abc##d######"  ==>  ""
 
 function cleanString(s) {
   let sArr = s.split("");
