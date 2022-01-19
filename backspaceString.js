@@ -3,7 +3,6 @@
 // Your task is to process a string with "#" symbols.
 
 // Examples
-// "abc#d##c"      ==>  "ac"
 
 function cleanString(s) {
   let sArr = s.split("");
