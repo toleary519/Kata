@@ -26,7 +26,7 @@
 // The second parameter will contain the count of each race on the side of evil in the following order:
 
 // Orcs, Men, Wargs, Goblins, Uruk Hai, Trolls, Wizards.
-// All values are non-negative integers. The resulting sum of the worth for each side will not exceed the limit of a 32-bit integer.
+// All values are non-negative. The resulting sum of the worth for each side will not exceed the limit of a 32-bit integer.
 
 function goodVsEvil(good, evil) {
   let goodArray = good.split(" ");
