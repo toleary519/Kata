@@ -6,7 +6,6 @@
 // Dwarves: 3
 // Eagles: 4
 // Wizards: 10
-// On the side of evil we have:
 
 // Orcs: 1
 // Men: 2
