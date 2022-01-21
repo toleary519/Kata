@@ -2,8 +2,6 @@
 
 // Your task is to process a string with "#" symbols.
 
-// Examples
-
 function cleanString(s) {
   let sArr = s.split("");
 
