@@ -11,19 +11,6 @@
 // 5, 2, "multiply" --> 10
 // 5, 2, "divide"   --> 2.5
 
-// function arithmetic(a, b, operator) {
-//   switch (operator) {
-//     case "add":
-//       return a + b;
-//     case "subtract":
-//       return a - b;
-//     case "multiply":
-//       return a * b;
-//     case "divide":
-//       return a / b;
-//   }
-// }
-
 function arithmetic(a, b, operator) {
   opter = { add: "+", subtract: "-", multiply: "*", divide: "/" };
   return eval(a + opter[operator] + b);
