@@ -12,6 +12,8 @@ const camelCase = function (input) {
   return camelOutput;
 };
 
+//tests
+
 console.log(camelCase("this is a string"));
 console.log(camelCase("loopy lighthouse"));
 console.log(camelCase("supercalifragalisticexpialidocious"));
