@@ -25,7 +25,6 @@
 // The second parameter will contain the count of each race on the side of evil in the following order:
 
 // Orcs, Men, Wargs, Goblins, Uruk Hai, Trolls, Wizards.
-// All values are non-negative.
 
 function goodVsEvil(good, evil) {
   let goodArray = good.split(" ");
