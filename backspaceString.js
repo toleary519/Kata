@@ -33,6 +33,6 @@ function clean_string(s) {
   return result.join("");
 }
 
-console.log(cleanString("abc#d##c")); // 'ac'
+console.log(cleanString("abc#d##c"));
 console.log("***********************************************");
 console.log(cleanString("abc####d##c#")); // ''
