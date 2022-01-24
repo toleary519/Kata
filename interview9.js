@@ -27,7 +27,7 @@ const returnPlayers = (outcomes) => {
 
 // Using the same data as the previous question, write a function that produces
 // a data structure like the following, which lists each participant, and a list
-// of who they've beaten
+// of who they've beat
 
 // ["Alice", "Bob", "Carol", "Dean", "Elise"];
 
