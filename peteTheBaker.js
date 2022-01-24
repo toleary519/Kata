@@ -4,8 +4,6 @@
 // If the string does not end with a number. the number 1 should be appended to the new string.
 // Examples:
 
-// foo0042 -> foo0043
-
 // Attention: If the number has leading zeros the amount of digits should be considered.
 
 function incrementString(str) {
