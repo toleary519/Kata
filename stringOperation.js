@@ -15,6 +15,6 @@ function arithmetic(a, b, operator) {
 }
 
 console.log(arithmetic(5, 2, "add"));
-console.log(arithmetic(5, 2, "subtract")); // => 3
+console.log(arithmetic(5, 2, "subtract"));
 console.log(arithmetic(5, 2, "multiply")); // => 10
 console.log(arithmetic(5, 2, "divide")); // => 2.5
