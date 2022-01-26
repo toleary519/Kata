@@ -4,8 +4,6 @@
 // If the string does not end with a number. the number 1 should be appended to the new string.
 // Examples:
 
-// Attention: If the number has leading zeros the amount of digits should be considered.
-
 function incrementString(str) {
   const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
   let outputString = [];
