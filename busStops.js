@@ -4,7 +4,7 @@
 
 // Your task is to return number of people who are still in the bus after the last bus station (after the last array). Even though it is the last bus stop, the bus is not empty and some people are still in the bus, and they are probably sleeping there :D
 
-// The return integer can't be negative.
+//integer can't be negative.
 
 let number = function (busStops) {
   let peopleLeft = 0;
