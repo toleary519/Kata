@@ -4,8 +4,6 @@
 
 // The four operators are "add", "subtract", "divide", "multiply".
 
-// A few examples:(Input1, Input2, Input3 --> Output)
-
 // 5, 2, "add"      --> 7
 // 5, 2, "subtract" --> 3
 
