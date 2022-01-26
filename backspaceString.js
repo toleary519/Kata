@@ -35,4 +35,4 @@ function clean_string(s) {
 
 console.log(cleanString("abc#d##c"));
 console.log("***********************************************");
-console.log(cleanString("abc####d##c#")); // ''
+console.log(cleanString("abc####d##c#"));
