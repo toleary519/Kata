@@ -2,7 +2,7 @@
 
 // If the string already ends with a number, the number should be incremented by 1.
 // If the string does not end with a number. the number 1 should be appended to the new string.
-// Examples:
+
 
 function incrementString(str) {
   const nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
