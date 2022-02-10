@@ -6,7 +6,7 @@
 // It must start with a hashtag (#).
 // All words must have their first letter capitalized.
 // If the final result is longer than 140 chars it must return false.
-// empty string returns false.
+// empty string => false.
 
 function generateHashtag(str) {
   if (!str) {
