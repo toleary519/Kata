@@ -1,4 +1,4 @@
-// Assume "#" is like a backspace in string.
+// Assume "#" is like a backspace in string
 
 function cleanString(s) {
   let sArr = s.split("");
