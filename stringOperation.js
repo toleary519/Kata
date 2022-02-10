@@ -4,8 +4,6 @@
 
 // The four operators are "add", "subtract", "divide", "multiply".
 
-// 5, 2, "subtract" --> 3
-
 function arithmetic(a, b, operator) {
   opter = { add: "+", subtract: "-", multiply: "*", divide: "/" };
   return eval(a + opter[operator] + b);
